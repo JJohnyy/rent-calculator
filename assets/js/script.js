@@ -64,10 +64,10 @@ room1.addEventListener("click", () => {
 
 
 function changeColor () {
-    if(this.style.backgroundColor ==="red") {
-        this.style.backgroundColor = "rgb(20, 63, 182)";
+    if(this.style.backgroundColor ==="#ff751a") {
+        this.style.backgroundColor = "#0047b3";
     }else {
-        this.style.backgroundColor = "red";
+        this.style.backgroundColor = "#ff751a";
     }
 }
 
@@ -77,10 +77,10 @@ for (let i = 0; i < locationBtns.length; i++) {
 
 
 function changeColoRooms () {
-    if(this.style.backgroundColor ==="red") {
-        this.style.backgroundColor = "rgb(20, 63, 182)";
+    if(this.style.backgroundColor ==="r#ff751a") {
+        this.style.backgroundColor = "#0047b3";
     }else {
-        this.style.backgroundColor = "red";
+        this.style.backgroundColor = "#ff751a";
     }
 }
 

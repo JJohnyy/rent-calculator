@@ -24,19 +24,27 @@ rent calculator should be able to help owner of the flat to decide how much is a
 ## Site owners Goals
 * Create an easily navigated site using a single page format.
 * Create a visually appealing site through the choice of colours and layout.
-* Give feedback to the user on performance.
-* Have a touch of humour to make the user experience more fun.
-* Ensure that a username must be entered to proceed.
 
 ### Requirements
 * Responsive design, based on mobile-first.
 * Use single-page layout.
 * Give a positive user experience through colours and layout.
-* Give feedback based on performance.
 
 ### Expectations
-* I expect to know that this is my game based on my username.
-* I expect that all the category choices lead to the correct questions.
-* I expect to be able to exit out of a category back to my personalised landing page.
-* I expect feedback on performance.
+* I expect user to process as smooth as possible.
+* I expect user to be done in under 30s wit the whole process.
 * I expect screen size not to affect the quality of my experience.
+
+
+## Design Choices
+
+### Fonts
+
+I have used [Google Fonts](https://fonts.google.com/ "Google Fonts") to aid me in selecting a suitable font. To keep the font for this game to a clean and simple look, I have chosen [Unbutu](https://fonts.google.com/specimen/Ubuntu). This is the only one that I will use as I don't feel there is enough content involved to warrant complicating the look with different fonts for headers and text.
+
+### Icons
+
+I will use some icons to enhance the user experience for the choice of categories, they will not be stand-alone but there to accompany the text and break up the look of all text. The icons will be sourced from the [Font Awesome library](https://fontawesome.com/ "Font Awesome"). 
+
+### Colours
+To create the colour scheme for the quiz, I used [W3schools](https://www.w3schools.com/colors/colors_picker.asp). I  I decided that as this was not a complex project where lots of different colours were needed, I would only use two. The generated colour scheme can be seen [here](https://i.imgur.com/1usNSd7.jpg). 
