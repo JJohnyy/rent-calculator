@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+    margin: 2em auto;
+}
+
+.outer-location-wrapper,
+.outer-rooms-wrapper, 
+.outer-inputs-wrapper, 
+.outer-answer-wrapper {
+    width: 100%;;
+    border: 1px solid red;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-location-wrapper, 
+.inner-rooms-wrapper {
+    width: 50%;
+    min-width: 531.5px;
+    height: auto;
+    border: 1px solid red;
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+}
+
+.location-btn, 
+.rooms-btn {
+    font-size: 2em;
+    border-radius: 5em;
+    padding: 0.3em;
+    background-color: rgb(20, 63, 182);
+    color: white;
+    margin-left: 1em;
+    cursor: pointer;
+    border: none;
+}
+
+label {
+    display: block;
+    font-size: 2em;
+}
+
+#numbers {
+    font-size: 1.5em;
+}
+
+input[type="checkbox"] {
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.active,
+.location-btn:hover, 
+.rooms-btn:hover {
+    background-color: red;
+    color: white;
+}
+
+h3 {
+    font-size: 3em;
+    text-align: center;
+    margin: 2em auto;
+}
+
+.outer-answer-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-answer-wrapper {
+    width: 25%;
+    height: 15em;
+    border: 3px solid rgb(20, 63, 182);
+    border-radius: 1em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#answer-btn {
+    font-size: 3em;
+    width: auto;
+    padding: 0.2em;
+    margin: 1em auto;
+    border-radius: 5em;
+    border: 2px solid red;
+    background: white;
+}
+
+#answer-btn:hover {
+    background: red;
+    color: white;
+    transition: 0.5s;
+}
+
+#answer {
+    font-size: 3em;
+}
+
+
