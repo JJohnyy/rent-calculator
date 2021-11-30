@@ -9,5 +9,5 @@ rent calculator should be able to help owner of the flat to decide how much is a
 
 ## User goals
 
-    - visually appealing, not cluttered with information
-    - 
+- visually appealing, not cluttered with information
+- 
