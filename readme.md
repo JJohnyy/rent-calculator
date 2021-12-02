@@ -47,4 +47,11 @@ I have used [Google Fonts](https://fonts.google.com/ "Google Fonts") to aid me i
 I will use some icons to enhance the user experience for the choice of categories, they will not be stand-alone but there to accompany the text and break up the look of all text. The icons will be sourced from the [Font Awesome library](https://fontawesome.com/ "Font Awesome"). 
 
 ### Colours
-To create the colour scheme for the page, I used [W3schools](https://www.w3schools.com/colors/colors_picker.asp). I  I decided that as this was not a complex project where lots of different colours were needed, I would only use two. The colour scheme can be seen [here](https://i.imgur.com/LmqrDqF.png). 
+
+To create the colour scheme for the page, I used [W3schools](https://www.w3schools.com/colors/colors_picker.asp). I  I decided that as this was not a complex project where lots of different colours were needed, I would only use two. The colour scheme can be seen [here](C:\Users\Jan Jaša\Documents\GitHub\2nd-project\assets\images). 
+
+### Structure
+
+I will be building my website with a mobile-first approach. Using the Chrome developer tools to give me the iPhone 5/SE (320px), I will use this as the smallest screen size for styling.
+
+
