@@ -65,12 +65,7 @@ roomsBtnsRef.forEach(button => {
 
 
 function matchBedroom(id) {
-    let bedroom = prague.find(bedroom => {
-        if (oneBedroom == 700) {
-            return bedroom
-        }
-    }) 
-    console.log(bedroom);
+    let bedroom = location.find();
 }
 
 
