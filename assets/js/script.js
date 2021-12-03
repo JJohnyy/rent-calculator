@@ -1,7 +1,7 @@
 const locationBtnsRef = Array.from(document.querySelectorAll(".location-btn"));
 const roomsBtnsRef = Array.from(document.querySelectorAll(".rooms-btn"));
 const prague1 = document.querySelector("#pOne");
-const room1 = document.querySelector("#roomOne");
+const room1 = document.querySelector("#oneBedroom");
 
 
 const prague = [
@@ -10,7 +10,7 @@ const prague = [
         location: "Prague 1",
         oneBedroom: 700,
         twoBedroom: 650,
-        threeBdroom: 600,
+        threeBedroom: 600,
         fourBedroom: 550,
     },
     {
@@ -18,7 +18,7 @@ const prague = [
         location: "Prague 2",
         oneBedroom: 670,
         twoBedroom: 620,
-        threeBdroom: 570,
+        threeBedroom: 570,
         fourBedroom: 520,
     },
     {
@@ -26,7 +26,7 @@ const prague = [
         location: "Prague 3",
         oneBedroom: 620,
         twoBedroom: 550,
-        threeBdroom: 470,
+        threeBedroom: 470,
         fourBedroom: 400,
     },
     {
@@ -34,7 +34,7 @@ const prague = [
         location: "Prague 4",
         oneBedroom: 580,
         twoBedroom: 530,
-        threeBdroom: 470,
+        threeBedroom: 470,
         fourBedroom: 410,
     }
 ]
@@ -47,13 +47,34 @@ locationBtnsRef.forEach(button => {
 });
 
 function matchLocation(id) {
-  const location = prague.filter(location =>{  
-        if(location.id == id) { 
-            return location 
-        }   
+    const location = prague.filter(location => {
+        if (location.id == id) {
+            return location
+        }
     })
-    console.log(location) 
+    console.log(location)
 }
+
+
+roomsBtnsRef.forEach(button => {
+    button.addEventListener("click", (event) => {
+        event.preventDefault();
+        matchBedroom(event.target.id);
+    })
+});
+
+
+function matchBedroom(id) {
+    let bedroom = prague.find(bedroom => {
+        if (oneBedroom == 700) {
+            return bedroom
+        }
+    }) 
+    console.log(bedroom);
+}
+
+
+
 
 function changeColor() {
     if (this.style.backgroundColor === "#ff751a") {
@@ -72,9 +93,9 @@ function changeColoRooms() {
     }
 }
 
-for (let i = 0; i < roomsBtns.length; i++) {
-    roomsBtns[i].addEventListener("click", changeColoRooms);
-}
+/*for (let i = 0; i < roomsBtnsRef.length; i++) {
+    roomsBtnsRef[i].addEventListener("click", changeColoRooms);
+}*/
 
 
 function appliances() {
@@ -94,7 +115,7 @@ function appliances() {
 
 function floorSize() {
     let fSize = document.getElementById("numbers").value;
-    return fSize
+    return fSize * matchBedroom();
 }
 
 function getPrice() {

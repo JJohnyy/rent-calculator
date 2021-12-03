@@ -64,7 +64,7 @@ input[type="checkbox"] {
 .active,
 .location-btn:hover, 
 .rooms-btn:hover {
-    background-color: red;
+    background-color: #ff751a;
     color: white;
 }
 
