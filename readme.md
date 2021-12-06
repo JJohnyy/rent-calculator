@@ -60,6 +60,7 @@ This a small projcet with limited functionalities and only one page.
 
 Standard button is blue
 * standard button
+![standard-button](assets/images/blue button.png)
 
 active button is orange
 * active button

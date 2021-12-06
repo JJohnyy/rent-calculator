@@ -18,7 +18,6 @@ h1 {
 .outer-inputs-wrapper, 
 .outer-answer-wrapper {
     width: 100%;;
-    border: 1px solid red;
     height: auto;
     display: flex;
     justify-content: center;
@@ -29,7 +28,6 @@ h1 {
     width: 50%;
     min-width: 531.5px;
     height: auto;
-    border: 1px solid red;
     margin: 1em auto;
     display: flex;
     justify-content: center;
