@@ -76,6 +76,10 @@ active button is orange
 
 ![check buttons](assets/images/checkButtons.png).
 
+* result buttons
+
+![result button](assets/images/resultButton.png).
+
 
 
 
