@@ -48,7 +48,7 @@ I will use some icons to enhance the user experience for the choice of categorie
 
 ### Colours
 
-To create the colour scheme for the page, I used [W3schools](https://www.w3schools.com/colors/colors_picker.asp). I  I decided that as this was not a complex project where lots of different colours were needed, I would only use two. The colour scheme can be seen here[colors](../assets/images/colors.png). 
+To create the colour scheme for the page, I used [W3schools](https://www.w3schools.com/colors/colors_picker.asp). I  I decided that as this was not a complex project where lots of different colours were needed, I would only use two. The colour scheme can be seen here ![colors](../assets/images/colors.png). 
 
 ### Structure
 
