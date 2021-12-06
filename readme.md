@@ -2,7 +2,9 @@
 
 # Goal for this project 
 
-rent calculator should be able to help owner of the flat to decide how much is a correct amount to ask for. This
+rent calculator should be able to help owner of the flat to decide how much is a correct amount to ask for.
+
+![responsivness](assets/images/priceArea.png)
 
 
 # Table of Contents
