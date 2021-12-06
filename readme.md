@@ -66,7 +66,7 @@ Standard button is blue
 active button is orange
 * active button
 
-![active button](assets/images/activeButton.png).
+![active button](assets/images/orangeButton.png).
 
 
 
