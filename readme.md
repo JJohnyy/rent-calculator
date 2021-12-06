@@ -68,6 +68,14 @@ active button is orange
 
 ![active button](assets/images/orangeButton.png).
 
+* floor size - input
+
+![input field](assets/images/floorSize.png).
+
+* parking and furnished buttons
+
+![check buttons](assets/images/checkButtons.png).
+
 
 
 
