@@ -26,11 +26,12 @@ h1 {
 .inner-location-wrapper, 
 .inner-rooms-wrapper {
     width: 50%;
-    min-width: 531.5px;
     height: auto;
     margin: 1em auto;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
 .location-btn, 
@@ -43,6 +44,8 @@ h1 {
     margin-left: 1em;
     cursor: pointer;
     border: none;
+    margin: 0.3em;
+    max-width: 175.5px;
 }
 
 label {
@@ -78,7 +81,8 @@ h3 {
 }
 
 .inner-answer-wrapper {
-    width: 25%;
+    width: 70%;
+    max-width: 384.69px;
     height: 15em;
     border: 3px solid #0047b3;
     border-radius: 1em;
@@ -110,3 +114,18 @@ h3 {
 }
 
 
+
+/**************
+
+MEDIA QUERIES
+
+****************/
+
+
+@media only screen and (min-width: 375px) {
+    .inner-location-wrapper, 
+    .inner-rooms-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+  }

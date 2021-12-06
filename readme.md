@@ -80,7 +80,7 @@ active button, when a button is clicked and being active, color turns orange
 
 ![result button](assets/images/resultButton.png).
 
-this area shows result, estimated rent
+this area shows result, estimated rent, when page loads, shows nothing
 * price area
 
 ![price area](assets/images/priceArea.png).
