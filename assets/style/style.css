@@ -13,6 +13,24 @@ h1 {
     margin: 2em auto;
 }
 
+h2 {
+    font-size: 3em;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 2em;
+    margin: 0.3em;
+}
+
+ol li {
+    text-align: center;
+    font-size: 2em;
+}
+
+
+
 .outer-location-wrapper,
 .outer-rooms-wrapper, 
 .outer-inputs-wrapper, 
@@ -31,7 +49,7 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 1em auto;
 }
 
 .location-btn, 
