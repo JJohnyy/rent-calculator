@@ -4,7 +4,7 @@
 
 rent calculator should be able to help owner of the flat to decide how much is a correct amount to ask for.
 
-![responsivness](assets/images/priceArea.png)
+![responsivness](assets/images/responsivness.png)
 
 
 # Table of Contents
