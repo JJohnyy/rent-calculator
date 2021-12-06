@@ -63,7 +63,7 @@ Standard button is blue
 
 ![standard-button](assets/images/blueButton.png).
 
-active button is orange
+active button, when a button is clicked and being active, color turns orange
 * active button
 
 ![active button](assets/images/orangeButton.png).
@@ -76,11 +76,14 @@ active button is orange
 
 ![check buttons](assets/images/checkButtons.png).
 
-* result buttons
+* result buttons - this button, when clicked enables the process to estimate a rent for the user, when hovered- turns orange
 
 ![result button](assets/images/resultButton.png).
 
+this area shows result, estimated rent
+* price area
 
+![price area](assets/images/priceArea.png).
 
 
 
