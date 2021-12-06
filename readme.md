@@ -48,10 +48,22 @@ I will use some icons to enhance the user experience for the choice of categorie
 
 ### Colours
 
-To create the colour scheme for the page, I used [W3schools](https://www.w3schools.com/colors/colors_picker.asp). I  I decided that as this was not a complex project where lots of different colours were needed, I would only use two. The colour scheme can be seen [here](C:\Users\Jan Jaša\Documents\GitHub\2nd-project\assets\images). 
+To create the colour scheme for the page, I used [W3schools](https://www.w3schools.com/colors/colors_picker.asp). I  I decided that as this was not a complex project where lots of different colours were needed, I would only use two. The colour scheme can be seen [here](assets\images). 
 
 ### Structure
 
 I will be building my website with a mobile-first approach. Using the Chrome developer tools to give me the iPhone 5/SE (320px), I will use this as the smallest screen size for styling.
+
+### Features
+
+This a small projcet with limited functionalities and only one page.
+
+Standard button is blue
+* standard button
+
+active button is orange
+* active button
+
+
 
 
