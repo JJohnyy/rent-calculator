@@ -131,6 +131,9 @@ buttons.forEach(button => button.addEventListener("click", (event) => {
 }));
 
 
+/**
+ * changes color of first row buttons
+ */
 function changeColor() {
     if (this.style.backgroundColor === "#ff751a") {
         this.style.backgroundColor = "#0047b3";
@@ -139,7 +142,9 @@ function changeColor() {
     }
 }
 
-
+/**
+ * changes color of second row buttons
+ */
 function changeColoRooms() {
     if (this.style.backgroundColor === "r#ff751a") {
         this.style.backgroundColor = "#0047b3";
@@ -153,6 +158,11 @@ function changeColoRooms() {
 }*/
 
 
+
+/**
+ * returns final price
+ *  
+ */
 function appliances() {
     let parking = document.getElementById("parking");
     let furnished = document.getElementById("furnished");
@@ -168,11 +178,20 @@ function appliances() {
 }
 
 
+
+/**
+ * returns price per square meter
+ * 
+ */
 function floorSize() {
     let fSize = document.getElementById("numbers").value;
     return fSize * currentPrice;
 }
 
+
+/**
+ * prints final price
+ */
 function getPrice() {
     document.getElementById("answer").innerHTML = `${appliances()}CZK`;
 }
