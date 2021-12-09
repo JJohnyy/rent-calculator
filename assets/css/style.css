@@ -13,53 +13,42 @@ h1 {
     margin: 2em auto;
 }
 
-h2 {
-    font-size: 3em;
-    text-align: center;
-}
-
-p {
-    text-align: center;
-    font-size: 2em;
-    margin: 0.3em;
-}
-
-.list-wrapper {
-    margin: 1em auto;
-    width: 20em;
-}
-
-ol li {
-    text-align: left;
-    font-size: 2em;
-}
-
-
-
 .outer-location-wrapper,
-.outer-rooms-wrapper, 
-.outer-inputs-wrapper, 
+.outer-floor-wrapper, 
 .outer-answer-wrapper {
-    width: 100%;;
+    width: 90%;;
     height: auto;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 8px 59px rgb(0 17 60 / 20%);
+    margin: 2em auto;
+    border-radius: 2em;
+    max-width: 1385px;
 }
 
 .inner-location-wrapper, 
-.inner-rooms-wrapper {
-    width: 50%;
+.inner-rooms-wrapper,
+.inner-numbers-wrapper,
+.inner-floor-wrapper,
+.inner-inputs-wrapper {
+    width: 70%;
     height: auto;
     margin: 1em auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 1em auto;
-    box-shadow: 0 8px 59px rgb(0 17 60 / 20%);
+    border: 1px solid red;
 }
 
+.inner-numbers-wrapper {
+    max-width: 203.59px;
+}
+
+
 .location-btn, 
-.rooms-btn {
+.rooms-btn,
+.floor-btn {
     font-size: 2em;
     border-radius: 5em;
     padding: 0.3em;
@@ -69,12 +58,14 @@ ol li {
     cursor: pointer;
     border: none;
     margin: 0.3em;
-    max-width: 175.5px;
+    width: 100%;
+    max-width: 11.5em;  
 }
 
 label {
     display: block;
     font-size: 2em;
+    text-align: center;
 }
 
 #numbers {
@@ -83,7 +74,7 @@ label {
     border-radius: 5em;
     padding-left: 1em;
     width: 6em;
-    position: relative;
+    margin: 0 auto;
 }
 
 input::-webkit-outer-spin-button,
@@ -100,17 +91,19 @@ span {
     padding: 0.23em;
     font-weight: bold;
     position: absolute;
-    margin-left: -2.2em;
-    margin-top: 0.25em;
+    margin-left: 8.9em;
+    margin-top: 1.55em;
 }
 
 input[type="checkbox"] {
     height: 2.5em;
     width: 2.5em;
+    display: none;
 }   
 
 #parking-label,
-#furnished-label {
+#furnished-label,
+#elevator-label {
     margin: 1em 0;
     cursor: pointer;
     background: #0047b3;
@@ -118,10 +111,8 @@ input[type="checkbox"] {
     padding: 1em;
     border-radius: 5em;
     text-align: center;
-}
-
-#parking:checked {   
-    background: #ff751a;
+    max-width: 11.5em;
+    margin: 1em auto;  
 }
 
 .active,
@@ -186,8 +177,15 @@ MEDIA QUERIES
 
 @media only screen and (min-width: 375px) {
     .inner-location-wrapper, 
-    .inner-rooms-wrapper {
+    .inner-rooms-wrapper,
+    .inner-floor-wrapper {
         flex-direction: row;
         flex-wrap: wrap;
     }
   }
+
+  @media only screen and (min-width: 768px) {
+      .inner-inputs-wrapper {
+          flex-direction:row;
+      }
+  } 

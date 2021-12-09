@@ -7,6 +7,7 @@ const parkingLabel = document.querySelector("#parking-label");
 const furnishedLabel = document.querySelector("#furnished-label");
 const parking = document.getElementById("parking");
 const furnished = document.getElementById("furnished");
+const elevator = document.getElementById("elevator");
 
 
 //store rent prices
@@ -45,10 +46,12 @@ const prague = {
         twoBedroom: 530,
         threeBedroom: 470,
         fourBedroom: 410,
-        prices: [580, 530, 470, 410],
+        prices: [430, 380, 330, 250],
     }
 }
 
+let storeysArray = [0, 18, 26, 33]
+let storeyPrices = storeysArray[0];
 
 // store clicked location, and clicked bedroom
 let currentLocation = 'pOne';
@@ -60,18 +63,23 @@ const buttons = document.querySelectorAll(".rooms-btn");
 
 // listen for location click and store result
 locations.forEach(location => location.addEventListener("click", (event) => {
-  const value = event.target.dataset.value;
-  currentLocation = value;
+    const value = event.target.dataset.value;
+    currentLocation = value;
 }));
 
 // listen for bedroom click and get result
 buttons.forEach(button => button.addEventListener("click", (event) => {
-  const value = parseInt(event.target.dataset.value);
-  currentPrice = prague[currentLocation].prices[value];
-  console.log(currentLocation, currentPrice);
-
+    const value = parseInt(event.target.dataset.value);
+    currentPrice = prague[currentLocation].prices[value];
 }));
 
+const storeys = document.querySelectorAll(".floor-btn");
+
+storeys.forEach(floor => floor.addEventListener("click", (event) => {
+    const value = parseInt(event.target.dataset.value);
+    updatedPrice = currentPrice + storeyPrices[value];
+    console.log(updatedPrice);
+}));
 
 /**
  * changes color of first row buttons
@@ -111,6 +119,8 @@ function appliances() {
         return floorSize() + 1000;
     } else if (parking.checked !== true && furnished.checked == true) {
         return floorSize() + 500;
+    } else if (elevator.checked == true) {
+        return floorSize() + 90;
     } else {
         return floorSize();
     }
@@ -118,9 +128,9 @@ function appliances() {
 
 
 function changeColorParking() {
-    
-        parkingLabel.classList.add("active");
-   
+
+    parkingLabel.classList.add("active");
+
 }
 
 parkingLabel.addEventListener("click", changeColorParking)
@@ -132,7 +142,7 @@ parkingLabel.addEventListener("click", changeColorParking)
  */
 function floorSize() {
     let fSize = document.getElementById("numbers").value;
-    return fSize * currentPrice;
+    return fSize * updatedPrice;
 }
 
 
