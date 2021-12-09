@@ -163,7 +163,6 @@ function changeColoRooms() {
 
 /**
  * returns final price
- *  
  */
 function appliances() {
     let parking = document.getElementById("parking");
@@ -183,7 +182,6 @@ function appliances() {
 
 /**
  * returns price per square meter
- * 
  */
 function floorSize() {
     let fSize = document.getElementById("numbers").value;
@@ -195,9 +193,9 @@ function floorSize() {
  * prints final price
  */
 function getPrice() {
-    document.getElementById("answer").innerHTML = `${appliances()}CZK`;
+    document.getElementById("answer").innerHTML = `${appliances()} CZK`;
 }
 
-//gets answer button variable, add click listner
+//gets answer button variable, add click listener
 let answerBtn = document.getElementById("answer-btn");
 answerBtn.addEventListener("click", getPrice);
