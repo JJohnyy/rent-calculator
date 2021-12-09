@@ -24,8 +24,13 @@ p {
     margin: 0.3em;
 }
 
+.list-wrapper {
+    margin: 1em auto;
+    width: 20em;
+}
+
 ol li {
-    text-align: center;
+    text-align: left;
     font-size: 2em;
 }
 
@@ -72,7 +77,17 @@ label {
 }
 
 #numbers {
-    font-size: 1.5em;
+    font-size: 1.8em;
+    height: 1.5em;
+    border-radius: 5em;
+    padding-left: 1em;
+    width: 6em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input[type="checkbox"] {

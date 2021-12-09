@@ -15,14 +15,6 @@ rent calculator should be able to help owner of the flat to decide how much is a
 * Medium standard of difficulty for the questions.
 * Rating on performance.
 
-## User Stories
-* As a user, I want to have the site personalised to my username.
-* As a user, I want to have clear options for the categories to choose from.
-* As a user, I want to see my score progress during a quiz category.
-* As a user, I want to see my rating based on my score after completing a category. 
-* As a user, I want to exit out of a set of category questions and back to the main selection page.
-
-
 ## Site owners Goals
 * Create an easily navigated site using a single page format.
 * Create a visually appealing site through the choice of colours and layout.
@@ -87,5 +79,40 @@ this area shows result, estimated rent, when page loads, shows nothing
 
 ![price area](assets/images/priceArea.png).
 
+
+### Techonologies used
+
+#### Languages
+* HTML
+* CSS
+* JavaScript
+
+#### Libraries
+* google fonts library
+
+#### tools
+* for construction - Visual Studio Code
+* for deployment - netlify
+* for HTML validation - W3C HTML validation service
+* for CSS validation - W3C CSS validation service
+ 
+### Features to be implemented
+
+* floor number
+* maintenance cost
+* cardinal direction
+* balcony
+* state of the flat
+
+### Testing
+
+* lighthouse
+
+* W3C validators
+
+
+With one of the goals being simple and easy to use, 
+
+After implementing my inital idea of calculating price by square meter I realized I have to adjust prices per square meter to make sure calculator does more realistic pricing. Overall Iam realizing this approach has quite a number of flaws and will have to be rethinked to for realisitc use in a real world. 
 
 

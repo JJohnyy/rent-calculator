@@ -68,6 +68,8 @@ function matchBedroom(id) {
     
 }*/
 
+
+//store rent prices
 const prague = {
     pOne: {
         id: "pOne",
@@ -196,5 +198,6 @@ function getPrice() {
     document.getElementById("answer").innerHTML = `${appliances()}CZK`;
 }
 
+//gets answer button variable, add click listner
 let answerBtn = document.getElementById("answer-btn");
 answerBtn.addEventListener("click", getPrice);
