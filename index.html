@@ -5,24 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>rent calculator</title>
 </head>
 
 <body>
     <section>
         <h1>How much should you rent for?</h1>
-        <h2>Welcome to our rent calculator</h2>
-        <p>using our calculator is very easy, please follow these steps</p>
-        <div class="list-wrapper">
-            <ol>
-                <li>pick location</li>
-                <li>pick number of rooms</li>
-                <li>input floor size</li>
-                <li>pick other options</li>
-                <li>calculate your rent</li>
-            </ol>
-        </div>
+       
     </section>
     <section>
         <!--location buttons row-->
@@ -51,10 +41,11 @@
         <div class="outer-inputs-wrapper">
             <div class="inner-inputs-wrapper">
                 <label for="numbers">floor size</label>
-                <input type="number" id="numbers">
-                <label for="parking">parking space</label>
+                <input type="number" id="numbers" required>
+                <span>m2</span>
+                <label for="parking" id="parking-label">parking space</label>
                 <input type="checkbox" id="parking">
-                <label for="furnished">furnished</label>
+                <label for="furnished" id="furnished-label">furnished</label>
                 <input type="checkbox" id="furnished">
             </div>
         </div>
@@ -62,7 +53,7 @@
     <section>
         <!--fresult button and final price area-->
         <div class="outer-answer-wrapper">
-            <button id="answer-btn">calculate rent</button>
+            <button id="answer-btn" type="submit">calculate rent</button>
             <div class="inner-answer-wrapper">
                 <p id="answer"></p>
             </div>
