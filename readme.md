@@ -72,7 +72,7 @@ active button, when a button is clicked and being active, color turns orange
 
 ![check buttons](assets/wireframes/checkButtons.png).
 
-![new check buttons](assets/wireframes/checkboxes.png).
+![new check buttons](assets/wireframes/new checkboxes.png).
 
 * result buttons - this button, when clicked enables the process to estimate a rent for the user, when hovered- turns orange - this was later changed to have an orange color originaly and when hovered to turn little bit darker and grow in size with the aim of more visually appealing design.
 
