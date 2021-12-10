@@ -53,7 +53,7 @@ I will be building my website with a mobile-first approach. Using the Chrome dev
 This a small projcet with limited functionalities and only one page. I started with a mobile phone version and worked my way up. In most of my styling I used flexbox, where I started with column for mobile version and changed to row at 375px and 768px respectively.  
 
 Standard button is blue
-* standard button - 
+* standard button - was created with a goal of very simplistic design without borders and with text only, with border-radius of 5em 
 
 ![standard-button](assets/wireframes/blueButton.png).
 
@@ -68,9 +68,11 @@ active button, when a button is clicked and being active, color turns orange
 
 ![new input field](assets/wireframes/new_input.png).
 
-* parking and furnished buttons
+* parking and furnished buttons - first intent was to leave checkboxes visible and style only to appear a bit bigger, this was later changed to create one simplistic design thru the whole site, using display: none - checkobex became non visible for the user and lables were styled to a point to make them look similar to a button with blue color and with border-radius of 5em. Later, using pseudo elemnt:checked an orange color was added when "active". Newer version can be seen below.
 
 ![check buttons](assets/wireframes/checkButtons.png).
+
+![new check buttons](assets/wireframes/checkboxes.png).
 
 * result buttons - this button, when clicked enables the process to estimate a rent for the user, when hovered- turns orange - this was later changed to have an orange color originaly and when hovered to turn little bit darker and grow in size with the aim of more visually appealing design.
 
