@@ -48,9 +48,9 @@ const prague = {
 }
 
 
- /**
-  * store clicked location, and clicked bedroom
-  */
+
+
+//store clicked location, and clicked bedroom
 let currentLocation = 'pOne';
 let currentPrice = prague[currentLocation].prices[0];
 
@@ -60,13 +60,25 @@ const buttons = document.querySelectorAll(".rooms-btn");
 
 /**
  * listen for location click and store result 
- */ 
+ */
 locations.forEach(location => location.addEventListener("click", (event) => {
     const value = event.target.dataset.value;
     currentLocation = value;
-    console.log(currentLocation)
-    this.classList.add("active");
 }));
+
+
+const locationWrapper = document.getElementById("location-wrapper");
+const locationBtns = locationWrapper.getElementsByClassName("location-btn");
+
+for (let i = 0; i < locationBtns.length; i++) {
+    locationBtns[i].addEventListener("click", function () {
+        let current = document.getElementsByClassName("active");
+        if (current.length > 0) {
+            current[0].className = current[0].className.replace(" active", "");
+        }
+        this.className += " active";
+    });
+}
 
 /**
  * listen for bedroom click and get result
@@ -74,9 +86,20 @@ locations.forEach(location => location.addEventListener("click", (event) => {
 buttons.forEach(button => button.addEventListener("click", (event) => {
     const value = event.target.dataset.value;
     currentPrice = prague[currentLocation].prices[value];
-    console.log(currentPrice)
-    this.classList.add("active");
 }));
+
+const roomsWrapper = document.getElementById("rooms-wrapper");
+const roomBtns = roomsWrapper.getElementsByClassName("rooms-btn");
+
+for (let i = 0; i < roomBtns.length; i++) {
+    roomBtns[i].addEventListener("click", function () {
+        let currentTwo = document.getElementsByClassName("active-two");
+        if (currentTwo.length > 0) {
+            currentTwo[0].className = currentTwo[0].className.replace(" active-two", "");
+        }
+        this.className += " active-two";
+    });
+}
 
 const storeys = document.querySelectorAll(".floor-btn");
 const storeysArray = [0, 18, 26, 33, 45]
@@ -86,55 +109,44 @@ const storeysArray = [0, 18, 26, 33, 45]
 storeys.forEach(floor => floor.addEventListener("click", (event) => {
     const value = parseInt(event.target.dataset.value);
     finalPrice = currentPrice + storeysArray[value];
-    console.log(finalPrice);
-    this.classList.add("active");
 }));
 
-/**
- * changes color of first row buttons
- */
-function changeColor() {
-    if (this.style.backgroundColor === "#ff751a") {
-        this.style.backgroundColor = "#0047b3";
-    } else {
-        this.style.backgroundColor = "#ff751a";
-    }
+const floorWrapper = document.getElementById("floor-wrapper");
+const floorBtns = floorWrapper.getElementsByClassName("floor-btn");
+
+for (let i = 0; i < floorBtns.length; i++) {
+    floorBtns[i].addEventListener("click", function () {
+        let currentThree = document.getElementsByClassName("active-three");
+        if (currentThree.length > 0) {
+            currentThree[0].className = currentThree[0].className.replace(" active-three", "");
+        }
+        this.className += " active-three";
+    });
 }
 
-/**
- * changes color of second row buttons
- */
-function changeColoRooms() {
-    if (this.style.backgroundColor === "#ff751a") {
-        this.style.backgroundColor = "#0047b3";
-    } else {
-        this.style.backgroundColor = "#ff751a";
-    }
-}
-
-/*for (let i = 0; i < roomsBtnsRef.length; i++) {
-    roomsBtnsRef[i].addEventListener("click", changeColoRooms);
-}*/
-
-
 
 /**
- * returns final price
+ * returns price of accesories
  */
 function appliances() {
-    if (parking.checked == true && furnished.checked == true) {
+    if (parking.checked == true && furnished.checked == true && elevator.checked !== true) {
         return floorSize() + 1500;
-    } else if (parking.checked == true && furnished.checked !== true) {
+    } else if (parking.checked == true && furnished.checked !== true && elevator.checked !== true) {
         return floorSize() + 1000;
-    } else if (parking.checked !== true && furnished.checked == true) {
+    } else if (parking.checked !== true && furnished.checked == true && elevator.checked !== true) {
         return floorSize() + 500;
-    } else if (elevator.checked == true) {
+    } else if (elevator.checked == true && parking.checked !== true && furnished.checked !== true) {
         return floorSize() + 90;
+    } else if (elevator.checked == true && furnished.checked == true && parking.checked !== true) {
+        return floorSize() + 590;
+    } else if (elevator.checked == true && parking.checked == true && furnished.checked !== true) {
+        return floorSize() + 1090;
+    } else if (elevator.checked == true && parking.checked == true && furnished.checked == true) {
+        return floorSize() + 1590;
     } else {
         return floorSize();
     }
 }
-
 
 /**
  * returns price per square meter
@@ -155,3 +167,4 @@ function getPrice() {
 //gets answer button variable, add click listener
 let answerBtn = document.getElementById("answer-btn");
 answerBtn.addEventListener("click", getPrice);
+

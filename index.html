@@ -15,16 +15,17 @@
        
     </section>
     <section>
-        <!--location buttons row-->
         <div class="outer-location-wrapper">
             <h3>location and size</h3>
-            <div class="inner-location-wrapper" id="first">
+            <!--location buttons row-->
+            <div class="inner-location-wrapper" id="location-wrapper">
                 <button class="location-btn" data-value="pOne">Prague 1</button>
                 <button class="location-btn" data-value="pTwo">Prague 2</button>
                 <button class="location-btn" data-value="pThree">Prague 3</button>
                 <button class="location-btn" data-value="pFour">Prague 4</button>
             </div>
-            <div class="inner-rooms-wrapper">
+            <!--room buttons row-->
+            <div class="inner-rooms-wrapper" id="rooms-wrapper">
                 <button class="rooms-btn" data-value="0">1 bedroom</button>
                 <button class="rooms-btn" data-value="1">2 bedroom</button>
                 <button class="rooms-btn" data-value="2">3 bedroom</button>
@@ -41,26 +42,29 @@
     <section>
         <div class="outer-floor-wrapper">
             <h3>storey and accessories</h3>
-            <div class="inner-floor-wrapper">
+            <div class="inner-floor-wrapper" id="floor-wrapper">
+                <!--storey buttons row-->
                 <button class="floor-btn" data-value="1">first storey</button>
                 <button class="floor-btn" data-value="2">second storey</button>
                 <button class="floor-btn" data-value="3">third storey</button>
                 <button class="floor-btn" data-value="4">fourth storey</button>
             </div>
             <div class="inner-inputs-wrapper">
-                <label for="parking" id="parking-label">parking space</label>
+                <!--accessories checkboxes and labels-->
                 <input type="checkbox" id="parking">
-                <label for="furnished" id="furnished-label">furnished</label>
+                <label for="parking" id="parking-label">parking space</label>
                 <input type="checkbox" id="furnished">
+                <label for="furnished" id="furnished-label">furnished</label> 
+                <input type="checkbox" id="elevator">  
                 <label for="elevator" id="elevator-label">elevator</label>
-                <input type="checkbox" id="elevator">                                              
+                                                             
             </div>
         </div>
     </section>
     <section>
-        <!--fresult button and final price area-->
+        <!--result button and final price area-->
         <div class="outer-answer-wrapper">
-            <button id="answer-btn" type="submit">calculate rent</button>
+            <button id="answer-btn">calculate rent</button>
             <div class="inner-answer-wrapper">
                 <p id="answer"></p>
             </div>

@@ -38,7 +38,6 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid red;
 }
 
 .inner-numbers-wrapper {
@@ -73,7 +72,7 @@ label {
     height: 1.5em;
     border-radius: 5em;
     padding-left: 1em;
-    width: 6em;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -91,7 +90,7 @@ span {
     padding: 0.23em;
     font-weight: bold;
     position: absolute;
-    margin-left: 8.9em;
+    margin-left: 10.8em;
     margin-top: 1.55em;
 }
 
@@ -99,7 +98,14 @@ input[type="checkbox"] {
     height: 2.5em;
     width: 2.5em;
     display: none;
-}   
+}
+
+#parking:checked + label,
+#furnished:checked + label,
+#elevator:checked + label {
+    background-color: #ff751a;
+    color: #fff;
+}
 
 #parking-label,
 #furnished-label,
@@ -116,6 +122,8 @@ input[type="checkbox"] {
 }
 
 .active,
+.active-two,
+.active-three,
 .location-btn:hover, 
 .rooms-btn:hover,
 .floor-btn:hover, 
