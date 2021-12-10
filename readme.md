@@ -57,8 +57,8 @@ Standard button is blue
 
 ![standard-button](assets/wireframes/blueButton.png).
 
-active button, when a button is clicked and being active, color turns orange
-* active button
+active button, when a button is clicked and being active, color turns orange - the idea was to let user know which button was pressed by a different color
+* active button 
 
 ![active button](assets/wireframes/orangeButton.png).
 
