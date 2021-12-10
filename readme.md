@@ -110,13 +110,21 @@ this area shows result, estimated rent, when page loads, shows nothing, styled w
 
 ### Testing
 
-* lighthouse
+* lighthouse - first test shown missing meta description which was fixed- both results shown below
+
+![w3cmarkup](assets/wireframes/lighthouse1st.png).
+
+![w3cmarkup](assets/wireframes/lighthouse2nd.png).
 
 * W3C validator - HTML validation - with first test the page had one issue and that was a missing heading which was fixed both results shown below
 
 ![w3cmarkup](assets/wireframes/w3cmarkup1st.png).
 
-![w3cmarkup](assets/wireframes/priceAreaw3cmarkup2nd.png).
+![w3cmarkup](assets/wireframes/w3cmarkup2nd.png).
+
+*W3C validator - CSS validation - first test shown no issues - result shown below
+
+![w3cmarkup](assets/wireframes/w3cvalidatorcss.png).
 
 With one of the goals being simple and easy to use, 
 
