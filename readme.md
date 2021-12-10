@@ -126,8 +126,19 @@ this area shows result, estimated rent, when page loads, shows nothing, styled w
 
 ![w3cmarkup](assets/wireframes/w3cvalidatorcss.png).
 
-With one of the goals being simple and easy to use, 
 
-After implementing my inital idea of calculating price by square meter I realized I have to adjust prices per square meter to make sure calculator does more realistic pricing. Overall Iam realizing this approach has quite a number of flaws and will have to be rethinked to for realisitc use in a real world. 
+After implementing my inital idea of calculating price by square meter I realized I have to adjust prices per square meter to make sure calculator does more realistic pricing. Overall Iam realizing this approach has quite a number of flaws and will have to be rethinked to for realisitc use in a real world. Even tho I implemented another features to create a better calculator, there is still some work to do. 
+
+
+### Deployment
+
+This project was deployed via GitHub by executing the following steps.
+After writing the code, committing and pushing it to GitHub:
+
+1. Navigate to the repository on github and click **Settings**.
+1. From there, go to the **Source section** within the Github Pages section.
+1. Select **main branch** on the dropdown menu, and click save.
+1. Now the website is live on **https://jjohnyy.github.io/rent-calculator/**
+1. Any time commits and pushes are sent to Github, the Github Pages site should update shortly after.
 
 
