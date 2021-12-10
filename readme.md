@@ -4,7 +4,7 @@
 
 rent calculator should be able to help owner of the flat to decide how much is a correct amount to ask for.
 
-![responsivness](assets/images/responsivness.png)
+![responsivness](assets/wireframes/responsivness.png)
 
 
 # Table of Contents
@@ -42,7 +42,7 @@ I will use some icons to enhance the user experience for the choice of categorie
 
 ### Colours
 
-To create the colour scheme for the page, I used [W3schools](https://www.w3schools.com/colors/colors_picker.asp). I  I decided that as this was not a complex project where lots of different colours were needed, I would only use two. The colour scheme can be seen here ![colors](assets/images/colors.png). 
+To create the colour scheme for the page, I used [W3schools](https://www.w3schools.com/colors/colors_picker.asp). I  I decided that as this was not a complex project where lots of different colours were needed, I would only use two. The colour scheme can be seen here ![colors](assets/wireframes/colors.png). 
 
 ### Structure
 
@@ -50,34 +50,36 @@ I will be building my website with a mobile-first approach. Using the Chrome dev
 
 ### Features
 
-This a small projcet with limited functionalities and only one page.
+This a small projcet with limited functionalities and only one page. I started with a mobile phone version and worked my way up. In most of my styling I used flexbox, where I started with column for mobile version and changed to row at 375px and 768px respectively.  
 
 Standard button is blue
-* standard button
+* standard button - 
 
-![standard-button](assets/images/blueButton.png).
+![standard-button](assets/wireframes/blueButton.png).
 
 active button, when a button is clicked and being active, color turns orange
 * active button
 
 ![active button](assets/images/orangeButton.png).
 
-* floor size - input
+* floor size - input - this element was changed to more visually appealing version using border-radius of 5em and a span with border radius of 50% and bolder text - can be seen here
 
-![input field](assets/images/floorSize.png).
+![input field](assets/wireframes/floorSize.png).
+
+![new input field](assets/wireframes/new_input.png).
 
 * parking and furnished buttons
 
-![check buttons](assets/images/checkButtons.png).
+![check buttons](assets/wireframes/checkButtons.png).
 
-* result buttons - this button, when clicked enables the process to estimate a rent for the user, when hovered- turns orange
+* result buttons - this button, when clicked enables the process to estimate a rent for the user, when hovered- turns orange - this was later changed to have an orange color originaly and when hovered to turn little bit darker and grow in size with the aim of more visually appealing design.
 
-![result button](assets/images/resultButton.png).
+![result button](assets/wireframes/resultButton.png).
 
 this area shows result, estimated rent, when page loads, shows nothing
 * price area
 
-![price area](assets/images/priceArea.png).
+![price area](assets/wireframes/priceArea.png).
 
 
 ### Techonologies used
@@ -92,13 +94,13 @@ this area shows result, estimated rent, when page loads, shows nothing
 
 #### tools
 * for construction - Visual Studio Code
-* for deployment - netlify
+* for deployment - netlify - thanks to help of my mentor I changed deployment to Github
 * for HTML validation - W3C HTML validation service
 * for CSS validation - W3C CSS validation service
  
 ### Features to be implemented
 
-* floor number
+* floor number - this feature was later added on
 * maintenance cost
 * cardinal direction
 * balcony
