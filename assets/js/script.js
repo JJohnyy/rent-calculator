@@ -1,8 +1,5 @@
-/*const locationBtnsRef = Array.from(document.querySelectorAll(".location-btn"));
-const roomsBtnsRef = Array.from(document.querySelectorAll(".rooms-btn"));
-const prague1 = document.querySelector("#pOne");
-const room1 = document.querySelector("#oneBedroom");*/
 
+// store variables
 const parkingLabel = document.querySelector("#parking-label");
 const furnishedLabel = document.querySelector("#furnished-label");
 const parking = document.getElementById("parking");
@@ -50,10 +47,10 @@ const prague = {
     }
 }
 
-let storeysArray = [0, 18, 26, 33]
-let storeyPrices = storeysArray[0];
 
-// store clicked location, and clicked bedroom
+ /**
+  * store clicked location, and clicked bedroom
+  */
 let currentLocation = 'pOne';
 let currentPrice = prague[currentLocation].prices[0];
 
@@ -61,24 +58,36 @@ let currentPrice = prague[currentLocation].prices[0];
 const locations = document.querySelectorAll(".location-btn");
 const buttons = document.querySelectorAll(".rooms-btn");
 
-// listen for location click and store result
+/**
+ * listen for location click and store result 
+ */ 
 locations.forEach(location => location.addEventListener("click", (event) => {
     const value = event.target.dataset.value;
     currentLocation = value;
+    console.log(currentLocation)
+    this.classList.add("active");
 }));
 
-// listen for bedroom click and get result
+/**
+ * listen for bedroom click and get result
+ */
 buttons.forEach(button => button.addEventListener("click", (event) => {
-    const value = parseInt(event.target.dataset.value);
+    const value = event.target.dataset.value;
     currentPrice = prague[currentLocation].prices[value];
+    console.log(currentPrice)
+    this.classList.add("active");
 }));
 
 const storeys = document.querySelectorAll(".floor-btn");
-
+const storeysArray = [0, 18, 26, 33, 45]
+/**
+ * listen for storey click and get a result
+ */
 storeys.forEach(floor => floor.addEventListener("click", (event) => {
     const value = parseInt(event.target.dataset.value);
-    updatedPrice = currentPrice + storeyPrices[value];
-    console.log(updatedPrice);
+    finalPrice = currentPrice + storeysArray[value];
+    console.log(finalPrice);
+    this.classList.add("active");
 }));
 
 /**
@@ -127,22 +136,12 @@ function appliances() {
 }
 
 
-function changeColorParking() {
-
-    parkingLabel.classList.add("active");
-
-}
-
-parkingLabel.addEventListener("click", changeColorParking)
-
-
-
 /**
  * returns price per square meter
  */
 function floorSize() {
     let fSize = document.getElementById("numbers").value;
-    return fSize * updatedPrice;
+    return fSize * finalPrice;
 }
 
 

@@ -117,7 +117,11 @@ input[type="checkbox"] {
 
 .active,
 .location-btn:hover, 
-.rooms-btn:hover {
+.rooms-btn:hover,
+.floor-btn:hover, 
+#parking-label:hover,
+#furnished-label:hover,
+#elevator-label:hover {
     background-color: #ff751a;
     color: #fff;
 }
@@ -131,6 +135,7 @@ h3 {
 .outer-answer-wrapper {
     display: flex;
     flex-direction: column;
+    padding-bottom: 2em;
 }
 
 .inner-answer-wrapper {
@@ -151,14 +156,16 @@ h3 {
     padding: 0.2em;
     margin: 1em auto;
     border-radius: 5em;
-    border: 2px solid #ff751a;
-    background: white;
+    border: none;
+    background: #ff751a;
     cursor: pointer;
+    color: #fff;
 }
 
 #answer-btn:hover {
-    background: #ff751a;
-    color: white;
+    background: #e56917;
+    border: 2px solid #e56917;
+    color: #fff;
     transition: 0.5s;
 }
 
