@@ -2,9 +2,31 @@
 // store variables
 const parkingLabel = document.querySelector("#parking-label");
 const furnishedLabel = document.querySelector("#furnished-label");
-const parking = document.getElementById("parking");
-const furnished = document.getElementById("furnished");
-const elevator = document.getElementById("elevator");
+const parking = document.querySelector("parking");
+const furnished = document.querySelector("furnished");
+const elevator = document.querySelector("elevator");
+
+//store clicked location, and clicked bedroom
+let currentLocation = 'pOne';
+let currentPrice = prague[currentLocation].prices[0];
+
+// get element from dom
+const locations = document.querySelectorAll(".location-btn");
+const buttons = document.querySelectorAll(".rooms-btn");
+
+const locationWrapper = document.querySelector("location-wrapper");
+const locationBtns = locationWrapper.querySelectorAll("location-btn");
+
+const roomsWrapper = document.querySelector("rooms-wrapper");
+const roomBtns = roomsWrapper.querySelectorAll("rooms-btn");
+
+const floorWrapper = document.querySelector("floor-wrapper");
+const floorBtns = floorWrapper.querySelectorAll("floor-btn");
+
+const storeys = document.querySelectorAll(".floor-btn");
+
+// store additional prices for each floor
+const storeysArray = [0, 18, 26, 33, 45]
 
 
 //store rent prices
@@ -50,13 +72,9 @@ const prague = {
 
 
 
-//store clicked location, and clicked bedroom
-let currentLocation = 'pOne';
-let currentPrice = prague[currentLocation].prices[0];
 
-// get element from dom
-const locations = document.querySelectorAll(".location-btn");
-const buttons = document.querySelectorAll(".rooms-btn");
+
+
 
 /**
  * listen for location click and store result 
@@ -66,9 +84,6 @@ locations.forEach(location => location.addEventListener("click", (event) => {
     currentLocation = value;
 }));
 
-
-const locationWrapper = document.getElementById("location-wrapper");
-const locationBtns = locationWrapper.getElementsByClassName("location-btn");
 
 for (let i = 0; i < locationBtns.length; i++) {
     locationBtns[i].addEventListener("click", function () {
@@ -88,8 +103,6 @@ buttons.forEach(button => button.addEventListener("click", (event) => {
     currentPrice = prague[currentLocation].prices[value];
 }));
 
-const roomsWrapper = document.getElementById("rooms-wrapper");
-const roomBtns = roomsWrapper.getElementsByClassName("rooms-btn");
 
 for (let i = 0; i < roomBtns.length; i++) {
     roomBtns[i].addEventListener("click", function () {
@@ -101,8 +114,6 @@ for (let i = 0; i < roomBtns.length; i++) {
     });
 }
 
-const storeys = document.querySelectorAll(".floor-btn");
-const storeysArray = [0, 18, 26, 33, 45]
 /**
  * listen for storey click and get a result
  */
@@ -111,8 +122,6 @@ storeys.forEach(floor => floor.addEventListener("click", (event) => {
     finalPrice = currentPrice + storeysArray[value];
 }));
 
-const floorWrapper = document.getElementById("floor-wrapper");
-const floorBtns = floorWrapper.getElementsByClassName("floor-btn");
 
 for (let i = 0; i < floorBtns.length; i++) {
     floorBtns[i].addEventListener("click", function () {
