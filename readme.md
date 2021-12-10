@@ -153,8 +153,31 @@ With this being my first project using javascript, naturally, I encoutered some 
 
 One of my major headeches was getting correct value to each button. I lost many hours attemting to work this out. Eventually, my mentor and tutor had to help me out. I was able to work it out and understand how to work with objects and arrays. This is part where I learned more advanced way to iterate thru array than for loop.
 
-When I ran test of the calculator, I quickly realized that I have to implement more variables and choices. So another row of buttons was added and function created to calculate another variable. 
+When I ran test of the calculator, I quickly realized that I have to implement more variables and choices. So another row of buttons was added and function created to calculate another variable. I also added at this point another checkbox with the same thoughts as I had before. This finally made me feel as the calculator could work as intended. 
 
+Another issue I encoutered was to create "active"(highlited wit horange color) - buttons with different color. I was, for a long time able to select them all, or none of them. With help of w3c schools - website, I was able to create a function which worked well and only one button was "active" when selected. Then I encoutered another issue and that only ONE button on entire page could be "active". This was solved by renaming active class and applying to other functions. 
+
+After creating appliances() - if else function, which worked well, I added another option. This is where I encoutered another problem and learned what has to be added to else if statements to make this funcion work without any issues. 
+
+Later on, as was suggested my mentor, I moved all variables and constants to top of the script. 
+
+
+### Known issues
+
+* result button working only on click and not on keypress
+* calculating price by square meter and changing between bedrooms sometimes creates unrealistic results
+
+
+### Acknowledgements
+
+First of all, I would like to thank my mentor Simen ([Eventyret_mentor](https://github.com/Eventyret)) for guiding me throughout this project. 
+He helped me to brainstorm about ideas which were in line with my interests. 
+During the mid review, he gave me a lot of tips in order to improve my code and to implement some other features in order to make my website more user friendly.
+
+I want to thank our Slack community as well. Whenever I had a doubt, I did some research on Slack and I always found someone who has the same issue as I did. 
+This helped me a lot to get to the solution sooner.
+
+My inspirsation I got mostly from working in rent business. Would love to continue working on this project to apply it at my company as I feel there are some people who would benefit from it. 
 
 
 
