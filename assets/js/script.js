@@ -84,7 +84,9 @@ locations.forEach(location => location.addEventListener("click", (event) => {
     currentLocation = value;
 }));
 
-
+/**
+ * listen for click and change class on element
+ */
 for (let i = 0; i < locationBtns.length; i++) {
     locationBtns[i].addEventListener("click", function () {
         let current = document.getElementsByClassName("active");
@@ -103,7 +105,9 @@ buttons.forEach(button => button.addEventListener("click", (event) => {
     currentPrice = prague[currentLocation].prices[value];
 }));
 
-
+/**
+ * listen for click and change class on element
+ */
 for (let i = 0; i < roomBtns.length; i++) {
     roomBtns[i].addEventListener("click", function () {
         let currentTwo = document.getElementsByClassName("active-two");
@@ -122,7 +126,9 @@ storeys.forEach(floor => floor.addEventListener("click", (event) => {
     finalPrice = currentPrice + storeysArray[value];
 }));
 
-
+/**
+ * listen for click and change class on element
+ */
 for (let i = 0; i < floorBtns.length; i++) {
     floorBtns[i].addEventListener("click", function () {
         let currentThree = document.getElementsByClassName("active-three");
