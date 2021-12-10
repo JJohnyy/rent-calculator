@@ -78,7 +78,7 @@ active button, when a button is clicked and being active, color turns orange
 
 ![result button](assets/wireframes/resultButton.png).
 
-this area shows result, estimated rent, when page loads, shows nothing
+this area shows result, estimated rent, when page loads, shows nothing, styled with only font size border and border-radius of 1em. The aim was to create area with empty field.
 * price area
 
 ![price area](assets/wireframes/priceArea.png).
@@ -112,7 +112,8 @@ this area shows result, estimated rent, when page loads, shows nothing
 
 * lighthouse
 
-* W3C validators
+* W3C validator - HTML validation - with first test the page had one issue and that was a missing heading
+
 
 
 With one of the goals being simple and easy to use, 
