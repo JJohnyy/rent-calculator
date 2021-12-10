@@ -109,6 +109,7 @@ this area shows result, estimated rent, when page loads, shows nothing, styled w
 * cardinal direction
 * balcony
 * state of the flat
+* result button working on "keypress"
 
 ### Testing
 
@@ -129,7 +130,9 @@ this area shows result, estimated rent, when page loads, shows nothing, styled w
 ![w3cmarkup](assets/wireframes/w3cvalidatorcss.png).
 
 
-After implementing my inital idea of calculating price by square meter I realized I have to adjust prices per square meter to make sure calculator does more realistic pricing. Overall Iam realizing this approach has quite a number of flaws and will have to be rethinked to for realisitc use in a real world. Even tho I implemented another features to create a better calculator, there is still some work to do. 
+After implementing my inital idea of calculating price by square meter I realized I have to adjust prices per square meter to make sure calculator does more realistic pricing. Overall Iam realizing this approach has quite a number of flaws and will have to be rethinked to for realisitc use in a real world. Even tho I implemented another features to create a better calculator, there is still some work to do. People who tested calculator didnt have any issues understanding or navigating thru the calculator. It was suggested to me to add some pictures. I wanted to keep the design with white background and thats what I did. 
+
+
 
 
 ### Deployment
@@ -142,5 +145,16 @@ After writing the code, committing and pushing it to GitHub:
 1. Select **main branch** on the dropdown menu, and click save.
 1. Now the website is live on **https://jjohnyy.github.io/rent-calculator/**
 1. Any time commits and pushes are sent to Github, the Github Pages site should update shortly after.
+
+
+### JavaScript
+
+With this being my first project using javascript, naturally, I encoutered some issues that I had to work throught.
+
+One of my major headeches was getting correct value to each button. I lost many hours attemting to work this out. Eventually, my mentor and tutor had to help me out. I was able to work it out and understand how to work with objects and arrays. This is part where I learned more advanced way to iterate thru array than for loop.
+
+When I ran test of the calculator, I quickly realized that I have to implement more variables and choices. So another row of buttons was added and function created to calculate another variable. 
+
+
 
 
