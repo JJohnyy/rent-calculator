@@ -78,6 +78,8 @@ active button, when a button is clicked and being active, color turns orange
 
 ![result button](assets/wireframes/resultButton.png).
 
+![result button](assets/wireframes/newcalcbutton.png).
+
 this area shows result, estimated rent, when page loads, shows nothing, styled with only font size border and border-radius of 1em. The aim was to create area with empty field.
 * price area
 
