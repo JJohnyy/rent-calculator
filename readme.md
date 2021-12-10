@@ -60,7 +60,7 @@ Standard button is blue
 active button, when a button is clicked and being active, color turns orange
 * active button
 
-![active button](assets/images/orangeButton.png).
+![active button](assets/wireframes/orangeButton.png).
 
 * floor size - input - this element was changed to more visually appealing version using border-radius of 5em and a span with border radius of 50% and bolder text - can be seen here
 
