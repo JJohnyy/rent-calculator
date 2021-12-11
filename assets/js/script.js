@@ -23,7 +23,7 @@ const floorBtns = floorWrapper.getElementsByClassName("floor-btn");
 const storeys = document.querySelectorAll(".floor-btn");
 
 // store additional prices for each floor
-const storeysArray = [0, 18, 26, 33, 45]
+const storeysArray = [0, 18, 26, 33, 45];
 
 
 //store rent prices
@@ -64,7 +64,7 @@ const prague = {
         fourBedroom: 410,
         prices: [430, 380, 330, 250],
     }
-}
+};
 
 
 
