@@ -1,25 +1,16 @@
 
 // store variables
-const parkingLabel = document.getElementById("#parking-label");
-const furnishedLabel = document.getElementById("#furnished-label");
 const parking = document.getElementById("parking");
 const furnished = document.getElementById("furnished");
 const elevator = document.getElementById("elevator");
-
-
-// get element from dom
 const locations = document.querySelectorAll(".location-btn");
 const buttons = document.querySelectorAll(".rooms-btn");
-
 const locationWrapper = document.getElementById("location-wrapper");
 const locationBtns = locationWrapper.getElementsByClassName("location-btn");
-
 const roomsWrapper = document.getElementById("rooms-wrapper");
 const roomBtns = roomsWrapper.getElementsByClassName("rooms-btn");
-
 const floorWrapper = document.getElementById("floor-wrapper");
 const floorBtns = floorWrapper.getElementsByClassName("floor-btn");
-
 const storeys = document.querySelectorAll(".floor-btn");
 
 // store additional prices for each floor
