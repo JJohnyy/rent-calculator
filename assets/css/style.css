@@ -104,7 +104,7 @@ input[type="checkbox"] {
 #furnished:checked + label,
 #elevator:checked + label {
     background-color: #ff751a;
-    color: #fff;
+    color: #000;
 }
 
 #parking-label,
@@ -131,9 +131,10 @@ input[type="checkbox"] {
 #furnished-label:hover,
 #elevator-label:hover {
     background-color: #ff751a;
-    color: #fff;
+    color: #000;
 }
 
+h2,
 h3 {
     font-size: 3em;
     text-align: center;
@@ -167,7 +168,7 @@ h3 {
     border: none;
     background: #ff751a;
     cursor: pointer;
-    color: #fff;
+    color: #000;
 }
 
 #answer-btn:hover {
