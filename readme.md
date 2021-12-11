@@ -85,6 +85,8 @@ active button, when a button is clicked and being active, color turns orange - t
 
 ![result button](assets/wireframes/newcalcbutton.png).
 
+![result button](assets/wireframes/answerBtn3rd.png).
+
 this area shows result, estimated rent, when page loads, shows nothing, styled with only font size border and border-radius of 1em. The aim was to create area with empty field.
 * price area
 
@@ -122,7 +124,7 @@ this area shows result, estimated rent, when page loads, shows nothing, styled w
 
 ![w3cmarkup](assets/wireframes/lighthouse1st.png).
 
-![w3cmarkup](assets/wireframes/lighthouse2nd.png).
+![w3cmarkup](assets/wireframes/lighthouse_updated.png).
 
 * W3C validator - HTML validation - with first test the page had one issue and that was a missing heading which was fixed both results shown below
 
