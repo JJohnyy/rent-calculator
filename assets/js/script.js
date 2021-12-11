@@ -1,27 +1,24 @@
 
 // store variables
-const parkingLabel = document.querySelector("#parking-label");
-const furnishedLabel = document.querySelector("#furnished-label");
-const parking = document.querySelector("parking");
-const furnished = document.querySelector("furnished");
-const elevator = document.querySelector("elevator");
+const parkingLabel = document.getElementById("#parking-label");
+const furnishedLabel = document.getElementById("#furnished-label");
+const parking = document.getElementById("parking");
+const furnished = document.getElementById("furnished");
+const elevator = document.getElementById("elevator");
 
-//store clicked location, and clicked bedroom
-let currentLocation = 'pOne';
-let currentPrice = prague[currentLocation].prices[0];
 
 // get element from dom
 const locations = document.querySelectorAll(".location-btn");
 const buttons = document.querySelectorAll(".rooms-btn");
 
-const locationWrapper = document.querySelector("location-wrapper");
-const locationBtns = locationWrapper.querySelectorAll("location-btn");
+const locationWrapper = document.getElementById("location-wrapper");
+const locationBtns = locationWrapper.getElementsByClassName("location-btn");
 
-const roomsWrapper = document.querySelector("rooms-wrapper");
-const roomBtns = roomsWrapper.querySelectorAll("rooms-btn");
+const roomsWrapper = document.getElementById("rooms-wrapper");
+const roomBtns = roomsWrapper.getElementsByClassName("rooms-btn");
 
-const floorWrapper = document.querySelector("floor-wrapper");
-const floorBtns = floorWrapper.querySelectorAll("floor-btn");
+const floorWrapper = document.getElementById("floor-wrapper");
+const floorBtns = floorWrapper.getElementsByClassName("floor-btn");
 
 const storeys = document.querySelectorAll(".floor-btn");
 
@@ -38,7 +35,7 @@ const prague = {
         twoBedroom: 650,
         threeBedroom: 600,
         fourBedroom: 550,
-        prices: [700, 650, 600, 550],
+        prices: [600, 550, 500, 400],
     },
     pTwo: {
         id: "pTwo",
@@ -47,7 +44,7 @@ const prague = {
         twoBedroom: 620,
         threeBedroom: 570,
         fourBedroom: 520,
-        prices: [670, 620, 570, 520],
+        prices: [570, 520, 470, 320],
     },
     pThree: {
         id: "pThree",
@@ -56,7 +53,7 @@ const prague = {
         twoBedroom: 550,
         threeBedroom: 470,
         fourBedroom: 400,
-        prices: [620, 550, 470, 400],
+        prices: [520, 450, 370, 300],
     },
     pFour: {
         id: "pFour",
@@ -74,7 +71,9 @@ const prague = {
 
 
 
-
+//store clicked location, and clicked bedroom
+let currentLocation = 'pOne';
+let currentPrice = prague[currentLocation].prices[0];
 
 /**
  * listen for location click and store result 
@@ -83,6 +82,7 @@ locations.forEach(location => location.addEventListener("click", (event) => {
     const value = event.target.dataset.value;
     currentLocation = value;
 }));
+
 
 /**
  * listen for click and change class on element
@@ -105,6 +105,7 @@ buttons.forEach(button => button.addEventListener("click", (event) => {
     currentPrice = prague[currentLocation].prices[value];
 }));
 
+
 /**
  * listen for click and change class on element
  */
@@ -125,6 +126,7 @@ storeys.forEach(floor => floor.addEventListener("click", (event) => {
     const value = parseInt(event.target.dataset.value);
     finalPrice = currentPrice + storeysArray[value];
 }));
+
 
 /**
  * listen for click and change class on element
