@@ -64,7 +64,7 @@ Standard button is blue
 
 ![standard-button](assets/wireframes/blueButton.png).
 
-active button, when a button is clicked and being active, color turns orange - the idea was to let user know which button was pressed by a different color
+active button - when a button is clicked and being active, color turns orange - the idea was to let user know which button was pressed by a different color
 * active button 
 
 ![active button](assets/wireframes/orangeButton.png).
@@ -91,8 +91,8 @@ because of contrast issues, answer button was changed to the version seen below
 
 ![result button](assets/wireframes/answerBtn3rd.png).
 
-this area shows result, estimated rent, when page loads, shows nothing, styled with only font size border and border-radius of 1em. The aim was to create area with empty field.
-* price area
+
+* price area - this area shows result, estimated rent, when page loads, shows nothing, styled with only font size border and border-radius of 1em. The aim was to create area with empty field.
 
 ![price area](assets/wireframes/priceArea.png).
 
