@@ -87,7 +87,7 @@ active button, when a button is clicked and being active, color turns orange - t
 
 ![result button](assets/wireframes/newcalcbutton.png).
 
-because of contrast issues with, answer button was changed to the version seen below
+because of contrast issues, answer button was changed to the version seen below
 
 ![result button](assets/wireframes/answerBtn3rd.png).
 
