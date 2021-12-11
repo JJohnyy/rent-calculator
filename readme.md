@@ -9,7 +9,7 @@ rent calculator should be able to help owner of the flat to decide how much is a
 
 #### updated design
 
-![responsivness](assets/wireframes/responsie_design.png)
+![responsivness](assets/wireframes/responsive_design.png)
 
 
 # Table of Contents
